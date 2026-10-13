@@ -1,0 +1,19 @@
+{
+  "det_timid_a3": "-9*(t**4 - 46*t**2 + 1)/(4*(t**2 + 1)**2)",
+  "eq119_extra_partner": "16*delta*t**2*(t - 1)**2*(t + 1)**2/(3*(t**2 + 1)**4)",
+  "eq119_general_RV": "32*beta*t**2*(t - 1)**2*(t + 1)**2/(5*(t**2 + 1)**4)",
+  "eq119_general_Rchain": "-16*beta*t**2*(t - 1)**2*(t + 1)**2/((t**2 + 1)**2*(t**2 - 4*t + 1)*(t**2 + 4*t + 1))",
+  "eq120_restricted": "ZERO",
+  "eq145_restricted": "ZERO",
+  "gate": "R12BB-ER",
+  "historical_full_v095_replay": "NOT_PERFORMED",
+  "interpretation": "Old XL full-CPOBC-survival claim withdrawn; local restricted identities preserved",
+  "kind": "symbolic_exact_with_sympy",
+  "rational_t3": {
+    "RV": "1152/3125",
+    "Rchain": "576/275",
+    "Rpartner": "192/625"
+  },
+  "scope": "Strong operator CPOBC, historical XL hermitian traceless 2x2 curve only",
+  "status": "PASS"
+}

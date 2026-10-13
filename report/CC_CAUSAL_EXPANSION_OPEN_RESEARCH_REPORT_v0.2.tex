@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usepackage[margin=26mm]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue!55!black,citecolor=blue!55!black,
+ pdftitle={Causal-Light Kinematics and Conditional Quantum Sequential Growth Constraints: An Exploratory Research Record},
+ pdfauthor={Pietro Risi}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Causal-Light Kinematics and Quantum Growth Constraints}
+\fancyhead[R]{\small Public research report v0.2}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\newcommand{\alert}{\textbf{\textcolor{red!65!black}{OPEN EXPLORATORY ARCHIVE --- NOT PEER-REVIEWED}}}
+\newcommand{\status}[1]{\textsf{#1}}
+\begin{document}
+\begin{center}
+{\Large\bfseries Causal-Light Kinematics and Conditional Quantum\\Sequential Growth Constraints}\\[7pt]
+{\large An Exploratory Research Record and Critical Status Assessment}\\[13pt]
+{\normalsize \textbf{Pietro Risi}}\\
+{\small Conceptual origin and research direction; extensive AI assistance disclosed below}\\[10pt]
+\textbf{14 October 2026 --- GitHub public report v0.2, based on notebook v1.03}\\[8pt]
+\alert\\[4pt]
+\textbf{Not peer-reviewed. Not a validated physical theory. No new autonomous law for $H(z)$ is claimed.}
+\end{center}
+\vspace{7pt}
+\begin{abstract}
+This record documents an exploratory, human-directed and substantially AI-assisted investigation originating from the heuristic ``$c+c$'' picture of cosmic expansion. In a Friedmann--Lema\^itre--Robertson--Walker (FLRW) spacetime, signed separations of counter-propagating radial null rays can contain a $2c$ term, while the proper separation of co-propagating rays evolves with the scale factor. These statements are standard kinematical identities, not a novel law of expansion. Subsequent studies of horizon thermodynamics, causal-volume models, causal sets, Benincasa--Dowker-type actions, and quantum sequential growth did not yield a self-contained gravitational measure or an autonomous prediction of $H(z)$. The mathematical work on non-singular Hermitian $2\times2$ growth operators is conditional on a strong operator formulation of Markov sum rules, general covariance, and ordered Bell causality. A correction issued in notebook v1.03 shows that an apparent exceptional family satisfying restrictions on antichain generators fails more general necessary identities of the underlying quantum sequential growth formalism. Elementary finite-dimensional counterexamples also distinguish equality on an initial state from equality as operators. This manuscript is a transparent status report, not a claim of new physical discovery. AI-generated computational checks, an AI-based critical review, and a subsequent AI-based citation audit are documented. No human peer review or independent human verification of the central arguments is documented.
+\end{abstract}
+\noindent\textbf{Keywords:} FLRW cosmology; null geodesics; causal horizons; causal set theory; quantum sequential growth; Bell causality; research reproducibility; AI-assisted research.\\[3pt]
+\noindent\textbf{Publication status:} Public GitHub exploratory report; not peer-reviewed, no DOI assigned, and no human expert validation claimed.
+\section{Purpose, origin, and limits}
+The starting question was whether the physical evolution of the separation of light signals or the growth of a cosmological causal horizon contains a meaningful term resembling $c+c$. The programme subsequently examined candidate mechanisms that might supplement the kinematics with dynamics, while recording unsuccessful, negative, and inconclusive results. The cumulative Italian-language research notebook (v1.03, 374 pages) is the underlying technical archive; this English report is a selective summary, not a translation or replacement of that archive.
+
+The standards adopted for interpreting the record are as follows: an identity derived for an assumed cosmological background is not an independent prediction of that background; an example in a finite causal set is not a derived four-dimensional gravitational theory; and satisfaction of necessary growth conditions is not the same as satisfaction of the complete quantum sequential growth axioms. Background on cosmological distance conventions may be found in Hogg~\cite{Hogg1999}. Neither this report nor its underlying notebook is presented as an observational parameter fit.
+
+\section{The kinematical content of ``\texorpdfstring{$c+c$}{c+c}''}
+Consider radial FLRW null propagation in a spatially flat metric,
+\begin{equation}
+ ds^2=-c^2dt^2+a^2(t)d\chi^2+\cdots,\qquad H=\dot a/a.
+\end{equation}
+For two radial null rays with signs $s_i\in\{+1,-1\}$, $\dot\chi_i=s_i c/a$. If $D=a(\chi_1-\chi_2)$ is the \emph{signed} radial proper separation on a constant-cosmic-time slice, then
+\begin{equation}
+\boxed{\dot D=H D+(s_1-s_2)c.}
+\label{eq:rays}
+\end{equation}
+Co-propagating rays ($s_1=s_2$) obey $\dot{\Delta D}=H\Delta D$; for oppositely propagating rays the signed separation carries an explicit $2c$ term. Neither statement implies a local propagation speed greater than $c$; the distinction between FLRW recession rates and local relative velocities is well established~\cite{DavisLineweaver2004}.
+
+For the particle horizon and Hubble radius,
+\begin{align}
+R_p(t)&=a(t)c\int_0^t\frac{dt'}{a(t')}, & \dot R_p&=HR_p+c,\\
+R_H(t)&=\frac{c}{H(t)}, &\dot R_H&=c(1+q), \qquad q=-1-\frac{\dot H}{H^2}.
+\end{align}
+In an ideal radiation-dominated era ($a\propto t^{1/2}$), $q=1$ and $\dot R_H=2c$; in the same idealisation $R_p=2ct$ and $\dot R_p=2c$. These are properties of an assumed expansion history, not sufficient conditions to determine $H(t)$. Equivalently, introducing $\alpha=HR_p/c$ gives the exact identity $d\alpha/d\ln a=1-q\alpha$, whose use as a dynamical equation would require additional independent physics.
+
+\section{Horizon thermodynamics is not a complete closure principle}
+In Einstein gravity, applying a horizon temperature and an area entropy to the apparent horizon recovers Friedmann-type relations under specified matter and conservation assumptions, as shown by Cai and Kim~\cite{CaiKim2005}. Jacobson's earlier work established a related thermodynamic route to the Einstein equation through local causal horizons~\cite{Jacobson1995}; corrected horizon entropy-area relations yield modified Friedmann equations in further established constructions~\cite{CaiCaoHu2008}. Padmanabhan's holographic equipartition programme is another pre-existing formulation~\cite{Padmanabhan2012}. These frameworks illustrate links between horizon thermodynamics and gravitational dynamics; their use in the notebook is not claimed as an independent discovery.
+
+Horizon-cutoff density prescriptions belong to an established holographic-dark-energy literature, including Li~\cite{Li2004}. More general past-horizon prescriptions, interaction terms, and nonlocal memory variables were considered only within specified benchmark models. A power-law or otherwise freely prescribed function is not selected by the causal history alone. In particular, matching an observed expansion with an undetermined parameter cannot count as predicting that expansion.
+
+\section{Causal-set benchmarks and missing physical structure}
+The original causal-set proposal is due to Bombelli, Lee, Meyer and Sorkin~\cite{BombelliLeeMeyerSorkin1987}; for background see Surya's review~\cite{Surya2019}. Classical sequential growth was developed by Rideout and Sorkin~\cite{RideoutSorkin2000}. Discrete curvature/action constructions were investigated by Benincasa and Dowker~\cite{BenincasaDowker2010}; interval statistics and causal-set locality have an established literature~\cite{GlaserSurya2013}. Moradi, Yazdi and Zilh\~ao developed a formalism for causal-set fluctuations and correlations while leaving particular continuum evaluations for future work~\cite{MoradiYazdiZilhao2025}.
+
+The notebook records finite combinatorial identities, numerically checked cases, and candidate variance-scaling conditions. They are not shown to yield, together, a quantum measure for dynamical four-dimensional geometries, an on-shell conserved gravitational source, a consistent retarded response kernel, or a continuum prediction for cosmic expansion.\par\noindent The fixed-$N$ two-dimensional-order calculations must be read alongside Benincasa--Dowker--Schmitzer's random discrete action~\cite{BenincasaDowkerSchmitzer2011}, Surya's smeared 2D action and its coefficient function~\cite{Surya2012}, and Glaser--Surya's analytic interval-abundance results for a Poisson ensemble~\cite{GlaserSurya2013}. Finite enumerations and numerical Poisson-transform checks reproduce selected formulas, but these checks do not establish a new general theorem or the originality of the fixed-$N$ expressions. An Efron--Stein variance-bound argument appears in the cumulative notebook, but its proof remains incomplete as a human-verified research result and its novelty is \emph{undetermined}.
+
+\section{Strong-operator QSG conditions and the v1.03 correction}
+Srivastava and Surya study several formulations of quantum Bell causality for non-commuting quantum sequential growth operators~\cite{SrivastavaSurya2026}, including causal-past-ordered Bell causality (CPOBC). In the arXiv v1 version, their Theorem 3.7 includes necessary relations for \emph{gregarious} transitions from general causal sets. Restricting those relations to antichain generators yields a special case, but the converse implication is not valid. The source also tests particular $d=2$ Pauli-matrix assignments; this report does not present those tests as original and does not turn them into a general no-go for all $2\times2$ representations.
+
+The notebook considered invertible Hermitian generators in dimension two with $[Q_1,Q_2]\ne0$. A convenient gauge is
+\begin{equation}
+ Q_1=\begin{pmatrix}a&0\\0&-a\end{pmatrix},\qquad
+ Q_2=\begin{pmatrix}b&u\\u&-b\end{pmatrix},\quad a,b,u\in\mathbb R,\quad au\ne0.
+\end{equation}
+Within a \emph{restricted} set of necessary relations, the analysis identified
+\begin{equation}
+ b=-\frac{1}{4a},\qquad u^2=\frac{4a^2-1}{16a^2},\qquad Q_3=\beta Q_2,
+ \qquad |a|>\frac12,\quad \beta\ne0.
+\label{eq:restricted}
+\end{equation}
+This was initially described too broadly as a surviving family. An AI-based critical review by Claude, followed by further AI-generated symbolic and rational algebraic checks recorded in notebook v1.03, identified two nonzero residuals when the \emph{general} necessary identities of Theorem 3.7 are imposed. The calculations have not been independently checked by a human expert:
+\begin{align}
+\mathcal R_V&=\frac{\beta(4a^2-1)}{10a^4}\,I,\\
+\mathcal R_{K_2}&=-\frac{4\beta u^2}{a^2-1}\,I.
+\label{eq:generalres}
+\end{align}
+Where the relevant transition operators are invertible (excluding the singularities of the construction), these residuals do not vanish on the purported non-commutative branch. Thus Eq.~\eqref{eq:restricted} remains a classification \emph{only of the restricted equations actually imposed}, and its interpretation as satisfying the full set of strong-operator necessary conditions was withdrawn. The previously derived, longer obstruction through another causal-set shape remains a conditional algebraic certificate, not the shortest available proof. This correction does not establish an impossibility theorem for arbitrary $2\times2$ matrices, non-Hermitian representations, higher dimensions, or vector-state formulations. In particular, it does not settle the branch $[Q_1,Q_2]=0$ with $Q_2=\lambda Q_1$ and a potentially noncommuting $Q_3$. The consistency of different admissible Bell partners is a separate necessary check; a further nonzero residue in notebook v1.03 is not a replacement for a complete partner-independence proof.
+
+\section{State-level versus operator-level equalities}
+If $D=X-Y$ and $|\Omega\rangle$ is a single initial state, then
+\begin{equation}
+ D|\Omega\rangle=0\quad\not\Rightarrow\quad D=0.
+\end{equation}
+This is standard linear algebra, not an original theorem. Equality of the action of two operators on a spanning set of initial preparations does imply their equality as operators. Equivalently, for a faithful density matrix $\rho>0$ on a finite-dimensional Hilbert space,
+\begin{equation}
+\operatorname{Tr}(\rho D^\dagger D)=0\iff D=0,
+\qquad \|D\|_F^2\le\frac{\operatorname{Tr}(\rho D^\dagger D)}{\lambda_{\min}(\rho)}.
+\end{equation}
+The notebook gives rational finite witnesses separating state-level from operator-level Markov and covariance conditions. These witnesses \emph{fail} the tested strong-operator Bell-causality condition. The elementary linear-algebraic distinctions and rational calculations were explored and checked using AI tools. They exhibit a logical gap, not a valid global quantum gravitational growth process. The physical availability of faithful preparations has not been derived from causal-set microdynamics.
+
+\section{Status of the physical programme}
+The investigation has not simultaneously established the ingredients needed for a predictive cosmological theory. Table~\ref{tab:missing} summarises the barriers, distinguishing established benchmark mathematics from a new derivation.
+\begin{table}[ht]
+\centering\small
+\caption{Requirements for a new physical model, not satisfied jointly by this research record.}\label{tab:missing}
+\begin{tabular}{@{}p{0.13\linewidth}p{0.65\linewidth}p{0.14\linewidth}@{}}\toprule
+Code & Requirement & Status \\ \midrule
+M1 & Specified dynamical history space and quantum state/measure & Not derived \\
+M2 & Microphysically selected dynamics without fitting target results & Not derived \\
+M3 & Globally consistent growth, covariance and Bell causality & Not derived \\
+M4 & Conserved gravitational source and response from the same theory & Not derived \\
+M5 & Controlled dynamical Lorentzian four-dimensional limit & Not derived \\
+M6 & Independent, falsifiable prediction of $H(z)$ & Not derived \\ \bottomrule
+\end{tabular}
+\end{table}
+
+The causal-set or thermodynamic frameworks in the literature are not themselves ruled out by this record. The negative outcomes refer to the assumptions and specific constructions tested here. No novel cosmological evolution, value of the cosmological constant, or gravitational-wave signature is claimed.
+
+\section{Reproducibility, attribution, and responsible dissemination}
+The archive identified as \texttt{CC\_CAUSAL\_EXPANSION\_v1.03\_RECOVERY\_LIGHT.zip} has SHA-256
+\begin{quote}\ttfamily\footnotesize
+cec306114db2742374cb35b7313018f4da5023205c3d16676d70f9863478b000
+\end{quote}
+Its checks are recorded in the v1.03 audit. The light recovery preserves recent analytical scripts, the cumulative \LaTeX{} source and 104 historical figures, but not every large historical simulation archive. Consequently, a complete re-execution of the full research history cannot be inferred from a successful current manifest check.
+
+\paragraph{Human research and AI use disclosure.}
+The initial conceptual scenario and iterative research direction were provided by Pietro Risi. ChatGPT (OpenAI) contributed substantially to mathematical exploration, derivations, symbolic calculations, code generation, numerical testing, figure production, documentation, and English/Italian drafting. Claude (Anthropic) produced an AI-based scientific critique, some algebraic cross-checks used in the corrected quantum-growth section, and the bibliographic/prior-art audit underlying this candidate. These activities are AI-assisted work, \emph{not} independent human verification or human peer review. No additional human mathematical verification or documented independent research basis is asserted here. The human research director remains responsible for the accuracy of all public descriptions and for the permissions to share the files. Public GitHub availability does not indicate endorsement, external validation or a successful derivation of new physics. AI tools are disclosed here as research assistance, not as human coauthors or peer reviewers.
+
+\paragraph{Public repository status and limitations.}
+This document is openly shared as a \emph{non-peer-reviewed and extensively AI-assisted research record}. No Zenodo deposit or DOI is claimed for this GitHub version, and originality remains unestablished for several mathematical identities. The repository preserves historical negative results, the full working notebook, and a dated corrigendum. Automated checksums establish integrity, not scientific correctness, human peer review, or independent validation. Readers should verify all arguments and their literature context before relying on them.
+
+\section{Conclusion}
+The ``$c+c$'' motivation has a precise and conventional kinematical interpretation, but by itself does not specify cosmological dynamics. The conditional operator-algebra work yields limited exclusions, with a necessary published-theorem correction incorporated in version 1.03 of the notebook. The finite-dimensional logical distinctions are standard; their illustrative instances pass AI-generated checks but do not produce a valid quantum sequential growth measure. No autonomous $H(z)$ was obtained. The appropriate next steps are human review of the mathematical claims, specialist prior-art checking for fixed-$N$ causal-set combinatorics, and independent review by interested researchers, with all unsuccessful and unresolved branches recorded.
+
+\begin{thebibliography}{99}\small
+\bibitem{Hogg1999} D.~W. Hogg, ``Distance measures in cosmology,'' arXiv:astro-ph/9905116 (1999, revised 2000). \url{https://arxiv.org/abs/astro-ph/9905116}.
+\bibitem{DavisLineweaver2004} T.~M. Davis and C.~H. Lineweaver, ``Expanding confusion: Common misconceptions of cosmological horizons and the superluminal expansion of the universe,'' \emph{Publ. Astron. Soc. Aust.} \textbf{21}, 97--109 (2004). \url{https://doi.org/10.1071/AS03040}.
+\bibitem{Jacobson1995} T. Jacobson, ``Thermodynamics of spacetime: The Einstein equation of state,'' \emph{Phys. Rev. Lett.} \textbf{75}, 1260--1263 (1995). \url{https://doi.org/10.1103/PhysRevLett.75.1260}.
+\bibitem{CaiKim2005} R.-G. Cai and S.~P. Kim, ``First law of thermodynamics and Friedmann equations of Friedmann--Robertson--Walker universe,'' \emph{JHEP} \textbf{02}, 050 (2005). \url{https://doi.org/10.1088/1126-6708/2005/02/050}.
+\bibitem{CaiCaoHu2008} R.-G. Cai, L.-M. Cao, and Y.-P. Hu, ``Corrected entropy-area relation and modified Friedmann equations,'' \emph{JHEP} \textbf{08}, 090 (2008). \url{https://doi.org/10.1088/1126-6708/2008/08/090}.
+\bibitem{Padmanabhan2012} T. Padmanabhan, ``Emergence and expansion of cosmic space as due to the quest for holographic equipartition,'' arXiv:1206.4916 (2012). \url{https://arxiv.org/abs/1206.4916}.
+\bibitem{Li2004} M. Li, ``A model of holographic dark energy,'' \emph{Phys. Lett. B} \textbf{603}, 1--5 (2004). \url{https://doi.org/10.1016/j.physletb.2004.10.014}.
+\bibitem{BombelliLeeMeyerSorkin1987} L. Bombelli, J. Lee, D. Meyer, and R.~D. Sorkin, ``Space-time as a causal set,'' \emph{Phys. Rev. Lett.} \textbf{59}, 521--524 (1987). \url{https://doi.org/10.1103/PhysRevLett.59.521}.
+\bibitem{RideoutSorkin2000} D.~P. Rideout and R.~D. Sorkin, ``Classical sequential growth dynamics for causal sets,'' \emph{Phys. Rev. D} \textbf{61}, 024002 (2000; online 1999). \url{https://doi.org/10.1103/PhysRevD.61.024002}.
+\bibitem{Surya2019} S. Surya, ``The causal set approach to quantum gravity,'' \emph{Living Rev. Relativ.} \textbf{22}, 5 (2019). \url{https://doi.org/10.1007/s41114-019-0023-1}.
+\bibitem{BenincasaDowker2010} D.~M.~T. Benincasa and F. Dowker, ``Scalar curvature of a causal set,'' \emph{Phys. Rev. Lett.} \textbf{104}, 181301 (2010). \url{https://doi.org/10.1103/PhysRevLett.104.181301}.
+\bibitem{BenincasaDowkerSchmitzer2011} D.~M.~T. Benincasa, F. Dowker, and B. Schmitzer, ``The random discrete action for two-dimensional spacetime,'' \emph{Class. Quantum Grav.} \textbf{28}, 105018 (2011). \url{https://doi.org/10.1088/0264-9381/28/10/105018}.
+\bibitem{Surya2012} S. Surya, ``Evidence for the continuum in 2D causal set quantum gravity,'' \emph{Class. Quantum Grav.} \textbf{29}, 132001 (2012). \url{https://doi.org/10.1088/0264-9381/29/13/132001}.
+\bibitem{GlaserSurya2013} L. Glaser and S. Surya, ``Towards a definition of locality in a manifoldlike causal set,'' \emph{Phys. Rev. D} \textbf{88}, 124026 (2013). \url{https://doi.org/10.1103/PhysRevD.88.124026}.
+\bibitem{MoradiYazdiZilhao2025} H. Moradi, Y.~K. Yazdi, and M. Zilh\~ao, ``Fluctuations and correlations in causal set theory,'' \emph{Class. Quantum Grav.} \textbf{42}, 045017 (2025). \url{https://doi.org/10.1088/1361-6382/adacd4}.
+\bibitem{SrivastavaSurya2026} R. Srivastava and S. Surya, ``Implementing Bell causality in quantum sequential growth,'' \emph{Phys. Rev. D} \textbf{114}, 086007 (2026); arXiv:2603.25503v1. \url{https://doi.org/10.1103/thx5-dknv}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,13 @@
+{
+  "eq119_extra_partner": "192/625",
+  "eq119_general_RV": "1152/3125",
+  "eq119_general_Rchain": "576/275",
+  "eq120_restricted": "ZERO",
+  "eq145_restricted": "ZERO",
+  "fixture": "t=3, beta=delta=1, a=5/6,b=-3/10,u=2/5",
+  "gate": "R12BB-ER",
+  "independent_symbolic_global_proof": "NOT_CLAIMED",
+  "interpretation": "Counterexample to global XL-survival on frozen rational fixture; symbolic proof separate",
+  "kind": "independent_fraction_exact_single_fixture",
+  "status": "PASS"
+}

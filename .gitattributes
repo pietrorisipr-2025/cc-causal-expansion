@@ -1,0 +1,3 @@
+# Preserve the exact bytes of scientific sources and historical PDFs.
+# Git's Windows autocrlf MUST NOT modify canonical *.tex / *.md / *.py files.
+* -text

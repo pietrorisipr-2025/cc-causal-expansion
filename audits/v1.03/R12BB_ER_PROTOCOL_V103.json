@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-13",
+  "discovery_preregistration": false,
+  "gate": "R12BB-ER",
+  "important_nonclaims": [
+    "not human peer review",
+    "not universal d=2 no-go",
+    "not completeness of partner table",
+    "not proof of QSG global measure",
+    "no H(z) gravity 4d"
+  ],
+  "no_new_operators_or_parameter_scanning": true,
+  "not_replayed": [
+    "v0.95 exhaustive historical replay",
+    "full original reviewer numerical suite"
+  ],
+  "outcomes_expected_from_exploratory_review": [
+    "RV=beta*(4a*a-1)/(10a**4)*I",
+    "Rchain=-4*beta*u*u/(a*a-1)*I",
+    "Rpartner=16*delta*t*t*(t*t-1)**2/(3*(t*t+1)**4)*I"
+  ],
+  "parent_name": "CC_CAUSAL_EXPANSION_v1.02_RECOVERY_LIGHT.zip",
+  "parent_sha256": "b44dc6af6ff7c546cdf41ba7391b1c6b115abd6022189a9d7690617e68de4d9d",
+  "reference_primary": "Srivastava and Surya arXiv:2603.25503v1, Theorem 3.7 Eqs.(114),(119) and special Eq.(120)",
+  "scope": "historical XL curve Q1,Q2 traceless hermitian invertible and [Q1,Q2]!=0; strong operator MSR/GC/CPOBC",
+  "task": "Correct overstatement of XL survival under general gregarious CPOBC; document necessary partner consistency residual",
+  "tests": [
+    "sympy global symbolic exact scalar residual GV",
+    "sympy global symbolic exact scalar residual Gchain",
+    "sympy L3 partner necessary residual",
+    "Fraction rational independent fixture at t=3 beta=delta=1",
+    "zero local Eq120 and Eq145 controls",
+    "full source PDF preservation"
+  ],
+  "type": "CORRIGENDUM_AFTER_EXTERNAL_AI_REPORT_NOT_PROSPECTIVE_DISCOVERY",
+  "version": "v1.03"
+}

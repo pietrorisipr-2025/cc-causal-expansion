@@ -1,0 +1,35 @@
+CC_CAUSAL_EXPANSION — LICENSE MAP
+================================
+
+This repository uses TWO permissive licenses for ORIGINAL content in which
+Pietro Risi has the rights necessary to license the material:
+
+1. Original scholarly text, original LaTeX manuscripts, original figures and
+   other original non-code documentation: Creative Commons Attribution 4.0
+   International (CC BY 4.0). See LICENSES/CC-BY-4.0.md and the authoritative
+   terms at https://creativecommons.org/licenses/by/4.0/legalcode
+
+2. Original software source code (Python scripts and related original code):
+   MIT License. See LICENSES/MIT.txt for the full license text.
+
+Both licenses permit use, redistribution, adaptation and COMMERCIAL use.
+Neither requires later adaptations to be shared publicly or as open source.
+Attribution and preservation of notices remain required as applicable.
+
+SCOPE AND EXCLUSIONS
+--------------------
+Licenses apply only to material the licensor has authority to license and
+only to rights protected by applicable law. No assertion is made that every
+AI-assisted or AI-generated element is copyright-protected or exclusively
+owned by the licensor. Existing third-party works, outside scientific
+publications, software dependencies, and externally authored audit materials
+are NOT relicensed merely by being referenced or archived here. The historical
+v1.03 recovery ZIP and older ZIPs must retain their existing provenance
+records and applicable notices. See THIRD_PARTY_NOTICES.md.
+
+No trademark rights, patent rights (beyond what any license itself expressly
+grants), moral rights, rights of privacy or rights of publicity are conveyed
+beyond the terms and extent of the selected license and governing law.
+
+This file is a scope guide, not a replacement for the authoritative license
+texts. Users should read the CC BY 4.0 legal code and MIT text.

@@ -1,0 +1,24 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.toc
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.lof
+*.lot
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+# Workspace
+.DS_Store
+Thumbs.db
+.env
+.env.*
+# Private/local scratch files
+*_scratch/
+_local/

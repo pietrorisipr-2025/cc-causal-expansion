@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the v1.03 scientific notebook or the short v0.2 public report, noting its non-peer-reviewed and AI-assisted status."
+title: "CC_CAUSAL_EXPANSION: An Open Exploratory Research Archive"
+authors:
+  - family-names: Risi
+    given-names: Pietro
+version: "1.03"
+repository-code: "https://github.com/pietrorisipr-2025/cc-causal-expansion"
+url: "https://github.com/pietrorisipr-2025/cc-causal-expansion"
+abstract: >-
+  Exploratory and substantially AI-assisted research on FLRW causal-light kinematics,
+  causal-set combinatorics and conditional quantum growth identities; includes historical
+  null results and the v1.03 XL corrigendum. Not peer-reviewed; no autonomous H(z) derived.
+keywords:
+  - causal set theory
+  - quantum sequential growth
+  - FLRW cosmology
+  - exploratory research
+preferred-citation:
+  type: report
+  title: "Causal-Light Kinematics and Conditional Quantum Sequential Growth Constraints: An Exploratory Research Record and Critical Status Assessment"
+  authors:
+    - family-names: Risi
+      given-names: Pietro
+  year: 2026
+  url: "https://github.com/pietrorisipr-2025/cc-causal-expansion/blob/main/report/CC_CAUSAL_EXPANSION_OPEN_RESEARCH_REPORT_v0.2.pdf"
